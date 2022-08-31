@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CAPM Calculator (Capital Asset Pricing Model)</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- radio -->
+  <input type="radio" id="riskpremiumoftheassetRadio" name="variables" checked>
+  <label for="riskpremiumoftheassetRadio">Risk premium of the asset</label>
+
+  <input type="radio" id="expectedrateofreturnRadio" name="variables">
+  <label for="expectedrateofreturnRadio">Expected rate of return</label>
+
+  <input type="radio" id="riskfreeinterestrateRadio" name="variables">
+  <label for="riskfreeinterestrateRadio">Risk-free interest rate</label>
+
+  <input type="radio" id="broadmarketreturnRadio" name="variables">
+  <label for="broadmarketreturnRadio">Broad market return</label>
+
+  <input type="radio" id="betaRadio" name="variables">
+  <label for="betaRadio">Beta</label><br><br>
+  <!-- end radio -->
+  
+  <label for="v1" id="variable1">Risk-free interest rate</label>
+  <input type="number" id="v1"><br><br>
+  
+  <label for="v2" id="variable2">Broad market return</label>
+  <input type="number" id="v2"><br><br>
+  
+  <label for="v3" id="variable3">Beta</label>
+  <input type="number" id="v3"><br><br>
+
+  <button id="btn">compute</button>
+
+  <p id="result"></p>
+  <script src="app.js"></script>
+</body>
+</html>
